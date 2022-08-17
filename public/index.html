@@ -1,43 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>React App</title>
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+<body>
+  <div id="root"></div>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="#!" class="header__logo-link">
+            <img src="./img/svg/logo-dark-2020 1.svg" alt="Logo" class="header__logo-pic">
+          </a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#!" class="header__link">Home</a>
+            </li>
+            <li class="header__item">
+              <a href="#!" class="header__link">About Us</a>
+            </li>
+            <li class="header__item">
+              <a href="#!" class="header__link">Our Lands</a>
+            </li>
+            <li class="header__item">
+              <a href="#!" class="header__link">Our Suppliers</a>
+            </li>
+            <li class="header__item">
+              <a href="#!" class="header__link">Products</a>
+            </li>
+            <li class="header__item">
+              <a href="#!" class="header__link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__shopping">
+          <a href="#!" class="header__shopping-link">
+            <img src="./img/svg/shopping Cart icon.svg" alt="Shopping" class="header__shopping-pic">
+          </a>
+        </div>
+        <div class="header__profile">
+          <a href="#!" class="header__profile-link">
+            <img src="./img/svg/profile Image.svg" alt="Profile" class="header__profile-pic">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="search">
+      <div class="wrapper">
+        <div class="search__wrapper">
+          <h1 class="search__title">
+            Search for something
+          </h1>
+          <div class="search__bar">
+            <div class="special"><input type="text" class="input"></div>
+          </div>
+          <div class="search__content">
+            Just type something in input above to start searching. Search presented by public API, and all content are
+            fake (or maybe not)
+          </div>
+          <div class="search__results">
+            Results:
+            <span class="search__results__error" style="color: red"></span>
+          </div>
+        </div>
+      </div>
+      <div class="results__wrapper">
+        <button class="left">
+          <img src="./img/left.png" style="margin-left: 7px;">
+        </button>
+        <div class="carousel__wrapper">
+          <div class="carousel">
+            <ul class="ul">
+            </ul>
+          </div>
+        </div>
+        <button class="right"><img src="./img/right.png" style="margin-right: 7px;"></button>
+      </div>
+    </section>
+  </main>
+  <script src="./js/main3.js"></script>
+</body>
 </html>
